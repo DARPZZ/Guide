@@ -17,6 +17,10 @@ function Home() {
             </li>
             <li>
             <HashLink to={'/kopibillede'}>Kopiere billede</HashLink>
+            
+            </li>
+            <li>
+              <HashLink to={'/genveje'}>Genveje</HashLink>
             </li>
           </ul>
         </nav>
