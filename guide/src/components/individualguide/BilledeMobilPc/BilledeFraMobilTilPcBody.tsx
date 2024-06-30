@@ -1,5 +1,9 @@
 import React from 'react'
-
+import picture1 from '../../../assets/MobilPcPictures/Picture1.png'
+import picture2 from '../../../assets/MobilPcPictures/Picture2.png'
+import ShareIcon from '../../../assets/MobilPcPictures/Shareicon.png'
+import picture5 from '../../../assets/MobilPcPictures/Picture5.png'
+import picture9 from '../../../assets/MobilPcPictures/Picture9.png'
 function BilledeFraMobilTilPcBody() {
   return (
       <div className="h-full w-full">
@@ -10,62 +14,69 @@ function BilledeFraMobilTilPcBody() {
             <div className='pt-16 pl-2 space-y-10 '>
                 <h1 className='text-xl underline font-bold'>Disse ting skal gøres på mobilen</h1>
                 <h3 className="font-normal text-lg">
-                <span className="font-bold underline text-xl">1.</span> Åben Fotos: Åbn appen, hvor dine billeder er gemt.
+                    <span className="font-bold underline text-xl">1.</span> Åben Fotos: Åbn appen, hvor dine billeder er gemt.
+                </h3>
+                <img src={picture1} className='w-1/6'/>
+
+                <h3 className="font-normal text-lg">
+                    <span className="font-bold underline text-xl">2.</span> Vælg: Klik på vælg øvert i højre hjørne.
+                </h3>
+                <img src={picture2} className=' w-1/3'/>
+
+
+                <h3 className="font-normal text-lg">
+                    <span className="font-bold underline text-xl">3.</span> Vælg billeder: Vælg de billeder du ønsker at have over på din pc ved at klikke på dem.
+                </h3>
+
+                <div className='flex flex-row'>
+                    <h3 className="font-normal text-lg">
+                        <span className="font-bold underline text-xl">4.</span> Del Billeder:  Nedert venstre er der en firgur 
+                    </h3>
+                    <img className='w-5 ml-2' src={ShareIcon} alt="" />
+                    <h3 className='font-normal text-lg ml-2'>tryk på denne</h3>
+                </div>
+
+
+
+                <h3 className="font-normal text-lg">
+                    <span className="font-bold underline text-xl">5.</span> Vælg delings måde: Du skal nu stryge din finger fra højre mod venstre indtil du kan se den der hedder "mere" og klikke på denne.
+                </h3>
+                <img src={picture5} className='w-1/3' alt="" />
+
+
+
+                <h3 className="font-normal text-lg">
+                    <span className="font-bold underline text-xl">6.</span> Vælg gmail: Du skal nu finde den der hedder "Gmail", og trykke på denne.
                 </h3>
 
 
 
                 <h3 className="font-normal text-lg">
-                <span className="font-bold underline text-xl">2.</span> Vælg billeder: Klik på vælg øvert i højre hjørne.
-                </h3>
-
-
-                <h3 className="font-normal text-lg">
-                <span className="font-bold underline text-xl">3.</span> Vælg billeder: Vælg de billeder du ønsker at have over på din pc ved at klikke på dem.
-
-                </h3>
-
-
-                <h3 className="font-normal text-lg">
-                <span className="font-bold underline text-xl">4.</span> Del Billeder:  nedert venstre er der en firgur (se billede) tryk på denne
-                </h3>
-
-
-
-                <h3 className="font-normal text-lg">
-                <span className="font-bold underline text-xl">5.</span> Vælg delings måde: Du skal nu stryge din finger fra højre mod venstre indtil du kan se den der hedder "mere" og klikke på denne.
-                </h3>
-
-
-
-                <h3 className="font-normal text-lg">
-                <span className="font-bold underline text-xl">6.</span> Vælg gmail: Du skal nu finde den der hedder "Gmail", og trykke på denne.
-                </h3>
-
-
-
-                <h3 className="font-normal text-lg">
-                <span className="font-bold underline text-xl">6.</span> Vælg modtager: Du skal nu finde feltet"Til" her skriver du din egen email ind og klikker .
+                    <span className="font-bold underline text-xl">6.</span> Vælg modtager: Du skal nu finde feltet "Til" her skriver du din egen email ind og klikker .
                 </h3>
 
                 <h1 className='underline font-bold text-3xl'> OBS Gå over på din computer</h1>
 
                 <h3 className="font-normal text-lg">
-                <span className="font-bold underline text-xl">7.</span> Åbn din e-mail: Log ind på din e-mailkonto fra din PC.
+                    <span className="font-bold underline text-xl">7.</span> Åbn din e-mail: Log ind på din e-mailkonto fra din PC.
                 </h3>
 
 
 
                 <h3 className="font-normal text-lg">
-                <span className="font-bold underline text-xl">8.</span> Åbn e-mailen med billederne: Find e-mailen, du sendte til dig selv.
+                    <span className="font-bold underline text-xl">8.</span> Åbn e-mailen med billederne: Find e-mailen, du sendte til dig selv.
                 </h3>
 
 
 
                 <h3 className="font-normal text-lg">
-                <span className="font-bold underline text-xl">9.</span> Download billederne: Klik på vedhæftningerne for at downloade billederne til din PC.
+                    <span className="font-bold underline text-xl">9.</span> Download billederne: Klik på billedet/billederne for at downloade billederne til din PC.
                 </h3>
+                <img src={picture9} className='w-1/2 border-4 border-black'/>
                 
+                <h3 className=" pt-2 pb-10 font-normal text-lg">
+                    <span className="font-bold underline text-xl">10.</span> Du kan nu finde dine billeder på din pc under mappen "Overførsler".
+                </h3>
             </div>
       </div>
   )
