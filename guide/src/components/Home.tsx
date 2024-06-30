@@ -11,12 +11,12 @@ function Home() {
       <div>
         <nav>
           <div className="animation start-home"></div>
-          <ul className='text-lg font-bold space-y-4 py-10 flex flex-col justify-center items-center'> 
+          <ul className='text-2xl font-bold space-y-10 py-10 flex flex-col justify-center items-center'> 
             <li>
               <HashLink to={'/kopitext'}>Kopiere tekst</HashLink>
             </li>
             <li>
-            <HashLink to={'/kopibillede'}>Kopiere billede</HashLink>
+            <HashLink to={'/kopibillede'}>Flyt billede fra mobil til pc</HashLink>
             
             </li>
             <li>
