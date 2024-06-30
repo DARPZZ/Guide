@@ -5,6 +5,9 @@ import picture3 from '../../../assets/WordToPdfPictures/picture3.png'
 import picture4 from '../../../assets/WordToPdfPictures/picture4.png'
 import picture5 from '../../../assets/WordToPdfPictures/picture5.png'
 import picture6 from '../../../assets/WordToPdfPictures/picture6.png'
+import wordpicture from '../../../assets/WordToPdfPictures/word.png'
+import arrow from '../../../assets/WordToPdfPictures/arrow.png'
+import pdf from '../../../assets/WordToPdfPictures/pdf.png'
 function WordPdfBody() {
   return (
     <div className='flex flex-col items-left w-full font-serif'>
@@ -12,6 +15,11 @@ function WordPdfBody() {
         <div className='text-center font-semibold'>
         <h1 className='text-3xl'>Velkommen til Word til PDF</h1>
         <h1 className=' pt-4'>Du vil lærer hvordan man konvertere fra word til pdf</h1>
+        <div className='flex flex-row space-x-7 justify-center items-center'>
+          <img src={wordpicture} className='w-20' />
+          <img src={arrow} alt="" className='w-20' />
+          <img src={pdf}  className='w-20' />
+        </div>
         </div>
         <div className='pt-16 pl-2 space-y-10 text-xs'>
           <h3 className="font-normal text-lg">
