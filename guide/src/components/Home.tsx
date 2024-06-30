@@ -5,8 +5,8 @@ function Home() {
   return (
     <div className="h-full w-full">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-3xl font-bold">Søg</h1>
-        <input type="text" className="w-1/3 border border-black rounded" />
+        <h1 className="py-2 text-3xl font-bold">Søg</h1>
+        <input type="text" className=" w-1/3 border border-black rounded" />
       </div>
       <div>
         <nav>
@@ -21,6 +21,9 @@ function Home() {
             </li>
             <li>
               <HashLink to={'/genveje'}>Genveje</HashLink>
+            </li>
+            <li>
+              <HashLink to={'/WordToPdf'}>Word til PDF</HashLink>
             </li>
           </ul>
         </nav>

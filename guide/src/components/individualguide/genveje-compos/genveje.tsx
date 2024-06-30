@@ -1,6 +1,6 @@
 import React from 'react';
-import GenNav from './genveje-compos/GenNav';
-import GenBody from './genveje-compos/GenBody';
+import GenNav from './GenNav';
+import GenBody from './GenBody';
 const Genveje = () => {
   return (
     <div className='h-full w-full flex flex-col md:flex-row'>
