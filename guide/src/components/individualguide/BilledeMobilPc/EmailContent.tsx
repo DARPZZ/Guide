@@ -9,7 +9,7 @@ function EmailContent({picture1, picture2}) {
     <h3 className="font-normal text-lg">
         <span className="font-bold underline text-xl">9.</span> Åbn e-mailen med billederne: Find e-mailen, du sendte til dig selv.
     </h3>
-    <h3 className="font-normal text-lg">
+    <h3 id='ralle' className="font-normal text-lg">
         <span className="font-bold underline text-xl">10.</span> Download billederne: Tryk på pil ikonet.
     </h3>
     <img src={picture1} className='w-1/3' />

@@ -1,6 +1,7 @@
 import React from 'react'
 
 function GmailContent({picture}) {
+ 
   return (
     <div className='  space-y-10'>
     <h3 className=" spfont-normal text-lg">
@@ -18,6 +19,7 @@ function GmailContent({picture}) {
     </h3>
     </div>
   )
+  
 }
 
 export default GmailContent

@@ -7,16 +7,24 @@ import picture9 from '../../../assets/MobilPcPictures/Picture9.png'
 import mobil from '../../../assets/MobilPcPictures/mobil.png'
 import pc from '../../../assets/MobilPcPictures/pc.png'
 import arrow from '../../../assets/WordToPdfPictures/arrow.png'
-import { scrollToTop } from '../../scroll';
+import { scrollToTop,decideID } from '../../scroll';
 import GmailContent from './GmailContent';
 import EmailContent from './EmailContent';
 import Picture1Email from '../../../assets/MobilPcPictures/Picture1Email.png'
 import Picture2Email from '../../../assets/MobilPcPictures/Picture2Email.png'
+let offs;
+let hasScrolled = false;
 function BilledeFraMobilTilPcBody() {
+    
     const [showScrollTopButton, setShowScrollTopButton] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
 
-    
+    useEffect(() => {
+        if (selectedOption) {
+            getpageOffset();
+        }
+    }, [selectedOption]);
+
     const handleScroll = () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         setShowScrollTopButton(scrollTop > 0);
@@ -28,14 +36,31 @@ function BilledeFraMobilTilPcBody() {
           window.removeEventListener('scroll', handleScroll);
         };
       }, []); 
+      
 
     
-        
       
-        const handleCheckboxChange = (event) => {
-          const { id } = event.target;
-          setSelectedOption(id);
-        };
+      function getpageOffset() {
+          if (!hasScrolled) {
+              offs = window.pageYOffset;
+              hasScrolled = true;
+              console.log("Initial offs set to: " + offs);
+          }
+          let off = window.pageYOffset;
+          
+          if (off <= offs) {
+              window.scrollTo({
+                  top: off + 600,
+                  left: 0,
+                  behavior: "smooth",
+              });
+          }
+      }
+      
+    const handleCheckboxChange = (event) => {
+        const { id } = event.target;
+        setSelectedOption(id);
+    };
       
   return (
       <div className="h-full w-full">
@@ -102,12 +127,13 @@ function BilledeFraMobilTilPcBody() {
                 <input 
                     id="gmail" 
                     type="checkbox" 
+                    
                     checked={selectedOption === 'gmail'}
                     onChange={handleCheckboxChange}
                     className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label className="mr-20 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Gmail</label>
-
+                    
                     <input 
                     id="email" 
                     type="checkbox" 
@@ -128,7 +154,7 @@ function BilledeFraMobilTilPcBody() {
                 {selectedOption === 'email' && (
                    <EmailContent picture2={Picture2Email} picture1={Picture1Email}></EmailContent> 
                 )}
-               
+              
             </div>
             {showScrollTopButton && (
         <button
