@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import picture1 from '../../../assets/WordToPdfPictures/picture1.png'
 import picture2 from '../../../assets/WordToPdfPictures/picture2.png'
 import picture3 from '../../../assets/WordToPdfPictures/picture3.png'
@@ -8,12 +8,28 @@ import picture6 from '../../../assets/WordToPdfPictures/picture6.png'
 import wordpicture from '../../../assets/WordToPdfPictures/word.png'
 import arrow from '../../../assets/WordToPdfPictures/arrow.png'
 import pdf from '../../../assets/WordToPdfPictures/pdf.png'
+import { scrollToTop } from '../../scroll';
 function WordPdfBody() {
+  const [showScrollTopButton, setShowScrollTopButton] = useState(false);
+
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    setShowScrollTopButton(scrollTop > 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); 
+
+
   return (
     <div className='flex flex-col items-left w-full font-serif'>
-      <div className='w-full h-full'>
+      <div className='w-11/12 h-full'>
         <div className='text-center font-semibold'>
-        <h1 className='text-3xl'>Velkommen til Word til PDF</h1>
+        <h1 className='text-3xl pt-5'>Velkommen til Word til PDF</h1>
         <h1 className=' pt-4'>Du vil lærer hvordan man konvertere fra word til pdf</h1>
         <div className='flex flex-row space-x-7 justify-center items-center'>
           <img src={wordpicture} className='w-20' />
@@ -54,6 +70,13 @@ function WordPdfBody() {
 
         </div>
       </div>
+      {showScrollTopButton && (
+        <button
+          className=' hidden lg:block opacity-75 transparent fixed bottom-6 right-6 bg-blue-500 hover:bg-pink-400 text-white px-4 py-2 rounded-md shadow-md'
+         onClick={scrollToTop}>
+          Til toppen
+        </button>
+      )}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import {scrollToTop, decideID} from '../../scroll'
 function GenNav() {
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
 
@@ -15,21 +15,6 @@ function GenNav() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []); 
-
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
-
-  const decideID = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({
-      behavior: 'smooth'
-    });
-  };
 
   return (
     <div className="flex flex-col justify-center pt-6 p-3 w-full md:w-1/3 h-full">

@@ -63,7 +63,7 @@ const CTRLH={
 
 function GenBody() {
   return (
-    <div className='flex flex-col items-center w-full pr-5 md:w-2/3'>
+    <div className='flex flex-col items-center w-full pr-5   md:w-2/3'>
     <div className='w-full h-full'>
       <SingleShortcut project={CTRLZ}></SingleShortcut>
       <SingleShortcut project={CTRLY}></SingleShortcut>

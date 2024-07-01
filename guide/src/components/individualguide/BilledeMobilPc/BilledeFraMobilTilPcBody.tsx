@@ -4,12 +4,21 @@ import picture2 from '../../../assets/MobilPcPictures/Picture2.png'
 import ShareIcon from '../../../assets/MobilPcPictures/Shareicon.png'
 import picture5 from '../../../assets/MobilPcPictures/Picture5.png'
 import picture9 from '../../../assets/MobilPcPictures/Picture9.png'
+import mobil from '../../../assets/MobilPcPictures/mobil.png'
+import pc from '../../../assets/MobilPcPictures/pc.png'
+import arrow from '../../../assets/WordToPdfPictures/arrow.png'
 function BilledeFraMobilTilPcBody() {
   return (
       <div className="h-full w-full">
             <div className="flex flex-col items-center justify-center">
-                <h1 className='font-bold text-3xl'>Velkommen til flyt billeder fra mobil til pc</h1>
+                <h1 className='font-bold pt-5 text-3xl'>Velkommen til flyt billeder fra mobil til pc</h1>
                 <h1 className='pt-4'> I denne guide bliver der vist, hvordan du kan flytte billeder fra mobil til pc</h1>
+                <div className='flex pt-5 flex-row justify-center items-center'>
+                    <img src={mobil}  className='w-20'/>
+                    <img src={arrow} className='w-20'/>
+                    <img src={pc} className='w-20 ml-5' />
+                    
+                </div>
             </div>
             <div className='pt-16 pl-2 space-y-10 '>
                 <h1 className='text-xl underline font-bold'>Disse ting skal gøres på mobilen</h1>
