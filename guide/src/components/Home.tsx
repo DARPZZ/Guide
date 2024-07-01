@@ -23,6 +23,9 @@ function Home() {
             <li>
               <HashLink to={'/WordToPdf'}>Word til PDF</HashLink>
             </li>
+            <li>
+              <HashLink to={'/mappe'}>Lav en ny mappe</HashLink>
+            </li>
           </ul>
         </nav>
       </div>
