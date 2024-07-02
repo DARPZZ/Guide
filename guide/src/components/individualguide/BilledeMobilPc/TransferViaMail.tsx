@@ -50,6 +50,12 @@ function TransferViaMail() {
                     <span className="font-bold underline text-xl">7.</span> Vælg modtager: Du skal nu finde feltet "Til" her skriver du din egen email ind og klikker .
                 </h3>
 
+
+                <h3 className="font-normal text-lg">
+                    <span className="font-bold underline text-xl">7.</span> Vælg modtager: Du skal nu finde feltet "Til" her skriver du din egen email ind og klikker .
+                </h3>
+                
+
                 </div>
   )
 }

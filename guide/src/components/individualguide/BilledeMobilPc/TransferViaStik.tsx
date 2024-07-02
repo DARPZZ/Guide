@@ -2,6 +2,7 @@ import React from "react";
 import picture1 from '../../../assets/MobilPcPictures/TransferStrikPicture1.png'
 import picture2 from '../../../assets/MobilPcPictures/thispc.png'
 import picture3 from '../../../assets/MobilPcPictures/Understand.png'
+import picture4 from '../../../assets/MobilPcPictures/CopyImg.png'
 function TransferViaStik() {
   return (
     <div className="space-y-10">
@@ -40,7 +41,7 @@ function TransferViaStik() {
       </h3>
       <img src={picture3} className="w-60" />
 
-      <h3  className="pb-10 font-normal text-lg">
+      <h3  className=" font-normal text-lg">
         <span className="font-bold underline text-xl">6.</span> Forstå Mapperne : Det er vigtig at forstå hvad navnet på mappen er, da det forklare meget om, hvad der er i mappen. Lad os tage et eksempel. "202407__"
         <div className=" space-x-1 flex flex-row">
           <h1 className="text-red-600"> 2024</h1>
@@ -49,6 +50,26 @@ function TransferViaStik() {
         <h3> Altså Iphone deler dine billeder i mapperne, efter hvad måned, de er blevet taget i</h3>
         <h3 className="text-red-600">Den røde farve indikere hvilket årstal billedet er blevet taget</h3>
         <h3 className="text-blue-600">Den blå farve indikere hvilken måned billedet er blevet taget i</h3>
+      </h3>
+
+      <h3 className="font-normal text-lg">
+        <span className="font-bold underline text-xl">8.</span> Vælg Mappe: Klik på den mappe hvor dit billede ligger i.
+      </h3>
+
+      <h3 className="font-normal text-lg">
+        <span className="font-bold underline text-xl">9.</span> Vælg Billede: højre klik på det billede du ønsker at have over på mobilen. og vælg "Kopier"
+      </h3>
+      <img src={picture4} className="w-2/3" />
+
+      <h3 className="font-normal text-lg">
+        <span className="font-bold underline text-xl">10.</span> Vælg destination :Find nu den mappe hvor du ønsker at bilelde skal gemmes i.
+      </h3>
+
+      <h3 className="font-normal text-lg">
+        <span className="font-bold underline text-xl">10.</span> Indsæt billede : Når du har fundet den mappe hvor billedet skal være kan du trykke <a className="text-purple-900 underline" href="/#/genveje">CTRL V</a>
+      </h3>
+      <h3 className="font-normal text-lg">
+        <span className="font-bold underline text-xl">11.</span> Færdig : Dit billede kan nu findes i din mappe
       </h3>
     </div>
   );

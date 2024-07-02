@@ -83,7 +83,7 @@ function BilledeFraMobilTilPcBody() {
       </div>
       <div className="pt-16 pl-2 space-y-10 ">
         <h1 className="font-bold text-xl">
-          Hvordan ønsker du at overføre dine billeder
+          Hvordan ønsker du at overføre dine billeder?
         </h1>
         <input
           id="Mail"
@@ -92,7 +92,7 @@ function BilledeFraMobilTilPcBody() {
           onChange={handleStartCheckboxChange}
           className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
         />
-        <label className="mr-20 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+        <label className="mr-20 ms-2 text-lg font-bold">
           Send over mail
         </label>
 
@@ -103,7 +103,7 @@ function BilledeFraMobilTilPcBody() {
           onChange={handleStartCheckboxChange}
           className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
         />
-        <label className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+        <label className=" ms-2 text-lg font-bold">
           Over USB
         </label>
 
@@ -122,9 +122,9 @@ function BilledeFraMobilTilPcBody() {
               OBS Gå over på din computer
             </h1>
 
-            <h1 className="text-lg font-bold">Bruger du Gmail eller Email?</h1>
+            <h1 className="text-lg font-bold mt-5">Bruger du Gmail eller Email?</h1>
             <div className="flex- flex-row">
-              <div className="flex items-center mb-10">
+              <div className="flex items-center mt-2  mb-10">
                 <input
                   id="gmail"
                   type="checkbox"
@@ -132,7 +132,7 @@ function BilledeFraMobilTilPcBody() {
                   onChange={handleCheckboxChange}
                   className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
-                <label className="mr-20 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                <label className="mr-20 ms-2 text-lg font-bold">
                   Gmail
                 </label>
 
@@ -143,7 +143,7 @@ function BilledeFraMobilTilPcBody() {
                   onChange={handleCheckboxChange}
                   className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
-                <label className=" ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                <label className=" ms-2 text-lg font-bold">
                   Email
                 </label>
               </div>
