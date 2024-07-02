@@ -42,7 +42,7 @@ function TransferViaStik() {
       <img src={picture3} className="w-60" />
 
       <h3  className=" font-normal text-lg">
-        <span className="font-bold underline text-xl">6.</span> Forstå Mapperne : Det er vigtig at forstå hvad navnet på mappen er, da det forklare meget om, hvad der er i mappen. Lad os tage et eksempel. "202407__"
+        <span className="font-bold underline text-xl">7.</span> Forstå Mapperne : Det er vigtig at forstå hvad navnet på mappen er, da det forklare meget om, hvad der er i mappen. Lad os tage et eksempel. "202407__"
         <div className=" space-x-1 flex flex-row">
           <h1 className="text-red-600"> 2024</h1>
           <h1 className="text-blue-600">07</h1>
@@ -66,10 +66,10 @@ function TransferViaStik() {
       </h3>
 
       <h3 className="font-normal text-lg">
-        <span className="font-bold underline text-xl">10.</span> Indsæt billede : Når du har fundet den mappe hvor billedet skal være kan du trykke <a className="text-purple-900 underline" href="/#/genveje">CTRL V</a>
+        <span className="font-bold underline text-xl">11.</span> Indsæt billede : Når du har fundet den mappe hvor billedet skal være kan du trykke <a className="text-purple-900 underline" href="/#/genveje">CTRL V</a>
       </h3>
       <h3 className="font-normal text-lg">
-        <span className="font-bold underline text-xl">11.</span> Færdig : Dit billede kan nu findes i din mappe
+        <span className="font-bold underline text-xl">12.</span> Færdig : Dit billede kan nu findes i din mappe
       </h3>
     </div>
   );
