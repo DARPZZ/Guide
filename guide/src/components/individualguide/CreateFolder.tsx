@@ -1,5 +1,6 @@
 import React from 'react'
 import CreateFolderPng from '../../assets/CreateFolder.png'
+import ChFolder from '../../assets/CreateFolderPictures/chooseFolder.png'
 function CreateFolder() {
   return (
     <div className='h-full w-full'>
@@ -11,8 +12,9 @@ function CreateFolder() {
         </div>
         <div className='pl-5 pt-5'>
             <h3 className="pt-2 pb-10 font-normal text-lg">
-                <span className="font-bold underline text-xl">1.</span> Gå til den placering, hvor du vil oprette mappen.
+                <span className="font-bold underline text-xl">1.</span> Gå til den placering, hvor du vil oprette mappen. I dette eksempel opretter vi en mappe i "Vidioer" Den kan oprettes alle steder
             </h3>
+            <img src={ChFolder} className='w-3/6' />
             <h3 className="pt-2 pb-10 font-normal text-lg">
                 <span className="font-bold underline text-xl">2.</span> Højreklik på et tomt område.
             </h3>
