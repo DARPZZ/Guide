@@ -8,6 +8,7 @@ function GenNav() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     setShowScrollTopButton(scrollTop > 0);
   };
+  
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -21,6 +22,7 @@ function GenNav() {
       <ul className="block space-y-5">
         <li>
           <button
+          id='section-2' 
             className="w-4/5  bg-blue-500 hover:bg-pink-400 text-white text-center py-2 px-4 rounded-md transition duration-300"
             onClick={() => decideID("CTRLZ")}
           >

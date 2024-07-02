@@ -18,13 +18,16 @@ function Home() {
             
             </li>
             <li>
-              <HashLink to={'/genveje'}>Genveje</HashLink>
+              <HashLink to={'/Genveje'}>Genveje</HashLink>
             </li>
             <li>
               <HashLink to={'/WordToPdf'}>Word til PDF</HashLink>
             </li>
             <li>
               <HashLink to={'/mappe'}>Lav en ny mappe</HashLink>
+            </li>
+            <li>
+              <HashLink to={'/edit/picture'}>Redigere billede</HashLink>
             </li>
           </ul>
         </nav>

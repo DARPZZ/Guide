@@ -8,6 +8,7 @@ import BilledeFraMobilTilPc from './individualguide/BilledeMobilPc/BilledeFraMob
 import CreateFolder from './individualguide/CreateFolder';
 import Home from './Home';
 import Error404 from './Error404';
+import EditPicture from './individualguide/EditPicture';
 function Links() {
   return (
     
@@ -19,6 +20,8 @@ function Links() {
           <Route path='/kopibillede' element={<BilledeFraMobilTilPc/>}/>
           <Route path="*" element={<Error404 />} />
           <Route path='/mappe' element={<CreateFolder/>}/>
+          <Route path='/edit/picture' element={<EditPicture/>}/>
+          
         </Routes>
  
   );

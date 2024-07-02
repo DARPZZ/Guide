@@ -66,7 +66,7 @@ function TransferViaStik() {
       </h3>
 
       <h3 className="font-normal text-lg">
-        <span className="font-bold underline text-xl">11.</span> Indsæt billede : Når du har fundet den mappe hvor billedet skal være kan du trykke <a className="text-purple-900 underline" href="/#/genveje">CTRL V</a>
+        <span className="font-bold underline text-xl">11.</span> Indsæt billede : Når du har fundet den mappe hvor billedet skal være kan du trykke CTRL V 
       </h3>
       <h3 className="font-normal text-lg">
         <span className="font-bold underline text-xl">12.</span> Færdig : Dit billede kan nu findes i din mappe
