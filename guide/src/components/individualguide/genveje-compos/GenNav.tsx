@@ -18,7 +18,7 @@ function GenNav() {
   }, []); 
 
   return (
-    <div className="flex flex-col justify-center pt-6 p-3 w-full md:w-1/3 h-full">
+    <div className="flex flex-col justify-center  p-3 w-full md:w-1/3 h-full">
       <ul className="block space-y-5">
         <li>
           <button

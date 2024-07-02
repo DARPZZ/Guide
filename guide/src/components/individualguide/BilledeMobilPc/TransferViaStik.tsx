@@ -14,7 +14,7 @@ function TransferViaStik() {
       </h3>
 
       <h3 className="font-normal text-lg">
-        <span className="font-bold underline text-xl">2.</span> pop up: På telefonen vil der komme en besked her skal du trykke "tillad"
+        <span className="font-bold underline text-xl">2.</span> Pop up: På telefonen vil der komme en besked her skal du trykke "tillad"
       </h3>
       <img src={picture1} className="w-80"/>
 
@@ -28,7 +28,7 @@ function TransferViaStik() {
             </h1>
 
       <h3 className="font-normal text-lg">
-        <span className="font-bold underline text-xl">4.</span> Åbern stifinder : Du skal åbne stifinder, og vælge Denne Pc og klikke på den
+        <span className="font-bold underline text-xl">4.</span> Åben stifinder : Du skal åbne stifinder, og vælge Denne Pc og klikke på den
       </h3>
       <img src={picture2} className="w-60" />
 

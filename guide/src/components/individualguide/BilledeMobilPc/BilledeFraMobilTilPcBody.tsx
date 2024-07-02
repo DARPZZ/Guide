@@ -65,7 +65,7 @@ function BilledeFraMobilTilPcBody() {
   };
   
   return (
-    <div className="h-full w-11/12">
+    <div className="h-full w-full">
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-bold pt-5 text-3xl">
           Velkommen til flyt billeder fra mobil til pc
@@ -81,7 +81,7 @@ function BilledeFraMobilTilPcBody() {
           <img src={pc} className="w-20 ml-5" />
         </div>
       </div>
-      <div className="pt-16 pl-2 space-y-10 ">
+      <div className=" w-11/12 pt-16 pl-2 space-y-10 ">
         <h1 className="font-bold text-xl">
           Hvordan ønsker du at overføre dine billeder?
         </h1>

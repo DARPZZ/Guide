@@ -4,7 +4,7 @@ import EdditButtonPic from "../../assets/EditPictures/EdditbuttonPic.png";
 import DoneEdditPic from "../../assets/EditPictures/DoneEddit.png";
 function EditPicture() {
   return (
-    <div className="h-full w-11/12">
+    <div className="h-full w-full">
       <div className="flex flex-col items-center justify-center">
         <h1 className="font-bold pt-5 text-3xl">
           Velkommen til redigere billeder
@@ -14,7 +14,7 @@ function EditPicture() {
           I denne guide bliver der vist, hvordan du kan redigere billeder 
         </h1>
       </div>
-      <div className="pt-16 pl-2 space-y-10 text-xs">
+      <div className=" w-11/12 pt-16 pl-2 space-y-10 text-xs">
         <h3 className="font-normal text-lg">
           <span className="font-bold underline text-xl">1.</span> Find Bilelde:
           Find det billede du ønsker at redigere. Du skal derefter åbne billedet
