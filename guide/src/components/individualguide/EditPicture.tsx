@@ -33,19 +33,19 @@ function EditPicture() {
           <span className="font-bold underline text-xl">1.</span> Find Bilelde:
           Find det billede du ønsker at redigere. Du skal derefter åbne billedet
         </h3>
-        <img src={EditPictures} alt="Fail" className="w-1/3" />
+        <img src={EditPictures} alt="Fail" className="md:w-1/3" />
         <h3 className="font-normal text-lg">
           <span className="font-bold underline text-xl">2.</span> Edit knappen:
           Efter du har trykket på edit knappen kan du nu redigere
         </h3>
-        <img src={EdditButtonPic} className="w-1/2" />
+        <img src={EdditButtonPic} className="md:w-1/2" />
 
         <h3 className="font-normal text-lg">
           <span className="font-bold underline text-xl">3.</span> Færdig
           redigering: Når du er færdig med at redigere dit billede skal du tykke
           på denne kanp
         </h3>
-        <img src={DoneEdditPic} className="w-1/2" />
+        <img src={DoneEdditPic} className="md:w-1/2" />
 
         <h3 className="font-normal text-lg">
           <div className="space-y-5">
