@@ -1,112 +1,61 @@
-import React, { useState, useEffect } from 'react';
-import {scrollToTop, decideID} from '../../scroll'
+import React, { useState, useEffect } from "react";
+import { scrollToTop, decideID } from "../../scroll";
+import GenNavButtons from "./GenNavButtons";
 function GenNav() {
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
-
 
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     setShowScrollTopButton(scrollTop > 0);
   };
-  
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, []); 
+  }, []);
 
   return (
     <div className="flex flex-col justify-center  p-3 w-full md:w-1/3 h-full">
-      <ul className="block space-y-5">
+      <ul className="block space-y-5 items-center">
         <li>
-          <button
-          id='section-2' 
-            className="w-4/5  bg-blue-500 hover:bg-pink-400 text-white text-center py-2 px-4 rounded-md transition duration-300"
-            onClick={() => decideID("CTRLZ")}
-          >
-            CTRL Z
-          </button>
+          <GenNavButtons command={"CTRLZ"} text={"CTRL Y"}></GenNavButtons>
         </li>
         <li>
-          <button
-              className="w-4/5  bg-blue-500 hover:bg-pink-400 text-white text-center py-2 px-4 rounded-md transition duration-300"
-            onClick={() => decideID("CTRLY")}
-          >
-            CTRL Y
-          </button>
+          <GenNavButtons command={"CTRLY"} text={"CTRL Z"}></GenNavButtons>
         </li>
         <li>
-          <button
-              className="w-4/5  bg-blue-500 hover:bg-pink-400 text-white text-center py-2 px-4 rounded-md transition duration-300"
-            onClick={() => decideID("CTRLC")}
-          >
-            CTRL C
-          </button>
+          <GenNavButtons command={"CTRLC"} text={"CTRL C"}></GenNavButtons>
         </li>
         <li>
-          <button
-              className="w-4/5  bg-blue-500 hover:bg-pink-400 text-white text-center py-2 px-4 rounded-md transition duration-300"
-            onClick={() => decideID("CTRLV")}
-          >
-            CTRL V
-          </button>
+          <GenNavButtons command={"CTRLV"} text={"CTRL V"}></GenNavButtons>
         </li>
         <li>
-          <button
-              className="w-4/5  bg-blue-500 hover:bg-pink-400 text-white text-center py-2 px-4 rounded-md transition duration-300"
-            onClick={() => decideID("CTRLP")}
-          >
-            CTRL P
-          </button>
+          <GenNavButtons command={"CTRLP"} text={"CTRL P"}></GenNavButtons>
         </li>
         <li>
-          <button
-              className="w-4/5  bg-blue-500 hover:bg-pink-400 text-white text-center py-2 px-4 rounded-md transition duration-300"
-            onClick={() => decideID("CTRLX")}
-          >
-            CTRL X
-          </button>
+          <GenNavButtons command={"CTRLX"} text={"CTRL X"}></GenNavButtons>
         </li>
         <li>
-          <button
-              className="w-4/5  bg-blue-500 hover:bg-pink-400 text-white text-center py-2 px-4 rounded-md transition duration-300"
-            onClick={() => decideID("CTRLS")}
-          >
-            CTRL S
-          </button>
+          <GenNavButtons command={"CTRLS"} text={"CTRL S"}></GenNavButtons>
         </li>
         <li>
-          <button
-             className="w-4/5  bg-blue-500 hover:bg-pink-400 text-white text-center py-2 px-4 rounded-md transition duration-300"
-            onClick={() => decideID("CTRLA")}
-          >
-            CTRL A
-          </button>
+          <GenNavButtons command={"CTRLA"} text={"CTRL A"}></GenNavButtons>
         </li>
         <li>
-          <button
-              className="w-4/5  bg-blue-500 hover:bg-pink-400 text-white text-center py-2 px-4 rounded-md transition duration-300"
-            onClick={() => decideID("CTRLF")}
-          >
-            CTRL F
-          </button>
+          <GenNavButtons command={"CTRLF"} text={"CTRL A"}></GenNavButtons>
         </li>
         <li>
-          <button
-              className="w-4/5  bg-blue-500 hover:bg-pink-400 text-white text-center py-2 px-4 rounded-md transition duration-300"
-            onClick={() => decideID("CTRLH")}
-          >
-            CTRL H
-          </button>
+          <GenNavButtons command={"CTRLH"} text={"CTRL H"}></GenNavButtons>
         </li>
       </ul>
 
       {showScrollTopButton && (
         <button
-          className='opacity-75 transparent fixed bottom-6 right-6 bg-blue-500 hover:bg-pink-400 text-white px-4 py-2 rounded-md shadow-md'
-          onClick={scrollToTop}>
+          className="opacity-75 hidden md:block transparent fixed bottom-6 right-6 bg-blue-500 hover:bg-pink-400 text-white px-4 py-2 rounded-md shadow-md"
+          onClick={scrollToTop}
+        >
           Til toppen
         </button>
       )}

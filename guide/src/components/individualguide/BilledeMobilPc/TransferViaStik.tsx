@@ -59,7 +59,7 @@ function TransferViaStik() {
       <h3 className="font-normal text-lg">
         <span className="font-bold underline text-xl">9.</span> Vælg Billede: højre klik på det billede du ønsker at have over på mobilen. og vælg "Kopier"
       </h3>
-      <img src={picture4} className="w-2/3" />
+      <img src={picture4} className="md:w-2/3" />
 
       <h3 className="font-normal text-lg">
         <span className="font-bold underline text-xl">10.</span> Vælg destination :Find nu den mappe hvor du ønsker at bilelde skal gemmes i.

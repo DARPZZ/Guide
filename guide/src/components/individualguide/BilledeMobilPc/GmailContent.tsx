@@ -13,7 +13,7 @@ function GmailContent({picture}) {
     <h3 className="font-normal text-lg">
         <span className="font-bold underline text-xl">10.</span> Download billederne: Klik på billedet/billederne for at downloade billederne til din PC.
     </h3>
-    <img src={picture} className='w-1/2 border-4 border-black'/>
+    <img src={picture} className='md:w-1/2 border-4 border-black'/>
     <h3 className="pt-2 pb-10 font-normal text-lg">
         <span className="font-bold underline text-xl">11.</span> Du kan nu finde dine billeder på din pc under mappen "Overførsler".
     </h3>

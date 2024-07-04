@@ -44,7 +44,7 @@ function WordPdfBody() {
             Word-dokument, du vil lave om til en PDF-fil, og åben det ved at
             dobbeltklikke på det.
           </h3>
-          <img src={picture1} alt="Fail" className="w-1/2" />
+          <img src={picture1} alt="Fail" className="md:w-1/2" />
 
           <h3 className="font-normal text-lg">
             <span className="font-bold underline text-xl">2.</span> Gå til
@@ -52,7 +52,7 @@ function WordPdfBody() {
             'Filer'. Denne knap kan også se ud som et lille ikon eller have
             ordet 'File' afhængigt af din version af Word.
           </h3>
-          <img src={picture2} alt="Fail" className="w-1/2" />
+          <img src={picture2} alt="Fail" className="md:w-1/2" />
 
           <h3 className="font-normal text-lg">
             <span className="font-bold underline text-xl">3.</span> Vælg 'Gem
@@ -81,7 +81,7 @@ function WordPdfBody() {
             <span className="font-bold underline text-xl">6.</span> Gem filen:
             Efter du har valgt PDF-formatet, klik på 'Gem' knappen.
           </h3>
-          <img src={picture6} alt="Fail" className="w-1/2" />
+          <img src={picture6} alt="Fail" className="md:w-1/2" />
         </div>
       </div>
       {showScrollTopButton && (
