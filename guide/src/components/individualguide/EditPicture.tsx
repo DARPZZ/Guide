@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import ScrollToTopButton from "../ScrollToTopButton";
 import EditPictures from "../../assets/EditPictures/choose.png";
 import EdditButtonPic from "../../assets/EditPictures/EdditbuttonPic.png";
 import DoneEdditPic from "../../assets/EditPictures/DoneEddit.png";
 function EditPicture() {
+  const [showScrollTopButton, setShowScrollTopButton] = useState(false);
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    setShowScrollTopButton(scrollTop > 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="h-full w-full">
       <div className="flex flex-col items-center justify-center">
@@ -44,6 +58,7 @@ function EditPicture() {
           </div>
         </h3>
       </div>
+      {showScrollTopButton && <ScrollToTopButton />}
     </div>
   );
 }

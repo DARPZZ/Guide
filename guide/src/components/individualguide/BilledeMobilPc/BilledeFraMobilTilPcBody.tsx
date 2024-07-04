@@ -11,6 +11,7 @@ import TransferViaMail from "./TransferViaMail";
 import TransferViaStik from "./TransferViaStik";
 import Picture1Email from "../../../assets/MobilPcPictures/Picture1Email.png";
 import Picture2Email from "../../../assets/MobilPcPictures/Picture2Email.png";
+import ScrollToTopButton from "../../ScrollToTopButton";
 let offs;
 let hasScrolled = false;
 function BilledeFraMobilTilPcBody() {
@@ -162,12 +163,7 @@ function BilledeFraMobilTilPcBody() {
         )}
       </div>
       {showScrollTopButton && (
-        <button
-          className=" hidden lg:block opacity-75 transparent fixed bottom-6 right-6 bg-blue-500 hover:bg-pink-400 text-white px-4 py-2 rounded-md shadow-md"
-          onClick={scrollToTop}
-        >
-          Til toppen
-        </button>
+       <ScrollToTopButton></ScrollToTopButton>
       )}
     </div>
   );

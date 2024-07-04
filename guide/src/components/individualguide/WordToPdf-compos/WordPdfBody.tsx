@@ -8,6 +8,7 @@ import picture6 from "../../../assets/WordToPdfPictures/picture6.png";
 import wordpicture from "../../../assets/WordToPdfPictures/word.png";
 import arrow from "../../../assets/WordToPdfPictures/arrow.png";
 import pdf from "../../../assets/WordToPdfPictures/pdf.png";
+import ScrollToTopButton from "../../ScrollToTopButton";
 import { scrollToTop } from "../../scroll";
 function WordPdfBody() {
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
@@ -85,12 +86,7 @@ function WordPdfBody() {
         </div>
       </div>
       {showScrollTopButton && (
-        <button
-          className=" hidden lg:block opacity-75 transparent fixed bottom-6 right-6 bg-blue-500 hover:bg-pink-400 text-white px-4 py-2 rounded-md shadow-md"
-          onClick={scrollToTop}
-        >
-          Til toppen
-        </button>
+        <ScrollToTopButton/>
       )}
     </div>
   );

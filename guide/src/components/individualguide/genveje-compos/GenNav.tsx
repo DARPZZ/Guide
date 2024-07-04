@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { scrollToTop, decideID } from "../../scroll";
 import GenNavButtons from "./GenNavButtons";
+import ScrollToTopButton from "../../ScrollToTopButton";
 function GenNav() {
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
 
@@ -52,12 +53,7 @@ function GenNav() {
       </ul>
 
       {showScrollTopButton && (
-        <button
-          className="opacity-75 hidden md:block transparent fixed bottom-6 right-6 bg-blue-500 hover:bg-pink-400 text-white px-4 py-2 rounded-md shadow-md"
-          onClick={scrollToTop}
-        >
-          Til toppen
-        </button>
+       <ScrollToTopButton/>
       )}
     </div>
   );
