@@ -1,12 +1,14 @@
 import { HashLink } from "react-router-hash-link";
 import React, { useState, useEffect } from "react";
 import EasterEgg from "./EasterEggFolder/EasterEgg";
+import Confettis from "./EasterEggFolder/Confetti";
+import ImageComp from "./EasterEggFolder/ImageComp";
 function Home() {
   const [inputValue, setInputValue] = useState("");
   const [easterEgg, setEasterEgg] = useState<boolean>(false);
   function getInput() {
     if (inputValue != "") {
-      if (inputValue === "Brent") {
+      if (inputValue === "Hero") {
         setEasterEgg(true);
       }
     }
@@ -68,7 +70,20 @@ function Home() {
       <div>
         <div>
           {easterEgg && (
-            <EasterEgg cancleEasterEgg={cancleEasterEgg}></EasterEgg>
+            <div>
+              <Confettis></Confettis>
+              <EasterEgg cancleEasterEgg={cancleEasterEgg}></EasterEgg>
+              <div className="space-x-80 flex flex-row">
+              <ImageComp></ImageComp>
+              <ImageComp></ImageComp>
+              <ImageComp></ImageComp>
+              </div>
+              
+              </div>
+              
+              
+
+
           )}
         </div>
         <nav>

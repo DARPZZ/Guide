@@ -2,7 +2,7 @@ import React from 'react'
 
 function EasterEgg({cancleEasterEgg}) {
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <div className="w-full flex flex-col justify-center items-center ">
     <iframe
       width="420"
       height="315"
