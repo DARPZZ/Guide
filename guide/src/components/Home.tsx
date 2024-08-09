@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import EasterEgg from "./EasterEggFolder/EasterEgg";
 import Confettis from "./EasterEggFolder/Confetti";
 import ImageComp from "./EasterEggFolder/ImageComp";
+import GmailPicture from "../assets/GmailPicture.png"
 function Home() {
   const [inputValue, setInputValue] = useState("");
   const [easterEgg, setEasterEgg] = useState<boolean>(false);
@@ -74,16 +75,11 @@ function Home() {
               <Confettis></Confettis>
               <EasterEgg cancleEasterEgg={cancleEasterEgg}></EasterEgg>
               <div className="space-x-80 flex flex-row">
-              <ImageComp></ImageComp>
-              <ImageComp></ImageComp>
-              <ImageComp></ImageComp>
+                <ImageComp></ImageComp>
+                <ImageComp></ImageComp>
+                <ImageComp></ImageComp>
               </div>
-              
-              </div>
-              
-              
-
-
+            </div>
           )}
         </div>
         <nav>
@@ -107,6 +103,23 @@ function Home() {
               <HashLink to={"/edit/picture"}>Redigere billede</HashLink>
             </li>
           </ul>
+          <div className=" flex flex-col justify-center items-center">
+            <h1 className="text-3xl mt-16">
+              Kunne du ikke finde, hvad du skulle bruge?
+            </h1>
+            <h1 className="text-xl">Lav et forslag her </h1>
+            <div>
+              <div>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=rasmustofthermansen@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img className="md:w-28 md:h-28 w-28 h-28" src={GmailPicture} />
+                </a>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
     </div>
