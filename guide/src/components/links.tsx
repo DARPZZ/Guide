@@ -9,6 +9,7 @@ import CreateFolder from './individualguide/CreateFolder';
 import Home from './Home';
 import Error404 from './Error404';
 import EditPicture from './individualguide/EditPicture';
+import KopiereMappe from './individualguide/KopiereMappe/KopiereMappe';
 function Links() {
   return (
     
@@ -21,6 +22,7 @@ function Links() {
           <Route path="*" element={<Error404 />} />
           <Route path='/mappe' element={<CreateFolder/>}/>
           <Route path='/edit/picture' element={<EditPicture/>}/>
+          <Route path='/kopiere mappe' element={<KopiereMappe/>}/>
           
         </Routes>
  

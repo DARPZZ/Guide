@@ -102,6 +102,9 @@ function Home() {
             <li>
               <HashLink to={"/edit/picture"}>Redigere billede</HashLink>
             </li>
+            <li>
+              <HashLink to={"/kopiere mappe"}>Kopiere mappe</HashLink>
+            </li>
           </ul>
           <div className=" flex flex-col justify-center items-center">
             <h1 className="text-3xl mt-16">
