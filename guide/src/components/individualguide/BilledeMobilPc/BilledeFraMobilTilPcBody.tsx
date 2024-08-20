@@ -44,7 +44,7 @@ function BilledeFraMobilTilPcBody() {
       console.log("Initial offs set to: " + offs);
     }
     let off = window.pageYOffset;
-
+    
     if (off <= offs) {
       window.scrollTo({
         top: off + 600,

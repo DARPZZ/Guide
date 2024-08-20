@@ -1,12 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 import TomtSpace from "../../../assets/KopiereMappe/TomtSpace.png";
 
 function KopiereMappe() {
   const [showRenameSteps, setShowRenameSteps] = useState(false);
 
   const handleRenameClick = () => {
+    
     setShowRenameSteps(true);
+    getPageLocation();
   };
+  useEffect(() => {
+    if (showRenameSteps) {
+      getPageLocation();
+    }
+  }, [showRenameSteps]);
+  function getPageLocation()
+  {
+    let pageYOffset = window.pageYOffset;
+    window.scrollTo({
+        top: pageYOffset  + 300,
+        left: 0,
+        behavior: "smooth",
+      });
+
+  }
+  
 
   return (
     <div className="h-full w-full">
