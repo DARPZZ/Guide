@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';  // Use Link for normal navigation
 import { Route, Routes } from 'react-router-dom';
 import KopiText from './individualguide/kopi';
 import Genveje from './individualguide/genveje-compos/genveje';
@@ -21,7 +20,7 @@ function Links() {
       <Route path="/kopibillede" element={<BilledeFraMobilTilPc />} />
       <Route path="/mappe" element={<CreateFolder />} />
       <Route path="/edit/picture" element={<EditPicture />} />
-      <Route path="/kopiere-mappe" element={<KopiereMappe />} />
+      <Route path="/kopiere/mappe" element={<KopiereMappe />} />
     </Routes>
   );
 }
