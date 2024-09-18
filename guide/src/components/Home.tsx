@@ -5,8 +5,6 @@ import Confettis from "./EasterEggFolder/Confetti";
 import ImageComp from "./EasterEggFolder/ImageComp";
 import GmailPicture from "../assets/GmailPicture.png"
 function Home() {
-  console.error('Hej')
-  console.log(import.meta.env.VITE_PUBLIC_GOOGLE_ANALYTICS)
   const [inputValue, setInputValue] = useState("");
   const [easterEgg, setEasterEgg] = useState<boolean>(false);
   function getInput() {
