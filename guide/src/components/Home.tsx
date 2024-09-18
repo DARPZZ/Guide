@@ -91,19 +91,16 @@ function Home() {
               </HashLink>
             </li>
             <li>
-              <HashLink to={"/Guide/Genveje"}>Genveje</HashLink>
+              <HashLink to={"/Genveje"}>Genveje</HashLink>
             </li>
             <li>
-              <HashLink to={"/Guide/WordToPdf"}>Word til PDF</HashLink>
+              <HashLink to={"/WordToPdf"}>Word til PDF</HashLink>
             </li>
             <li>
-              <HashLink to={"/Guide/mappe"}>Lav en ny mappe</HashLink>
+              <HashLink to={"/mappe"}>Lav en ny mappe</HashLink>
             </li>
             <li>
-              <HashLink to={"/Guide/edit/picture"}>Redigere billede</HashLink>
-            </li>
-            <li>
-              <HashLink to={"/Guide/kopiere/mappe"}>Kopiere mappe</HashLink>
+              <HashLink to={"/edit/picture"}>Redigere billede</HashLink>
             </li>
           </ul>
           <div className=" flex flex-col justify-center items-center">
