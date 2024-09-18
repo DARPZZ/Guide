@@ -13,14 +13,14 @@ import KopiereMappe from './individualguide/KopiereMappe/KopiereMappe';
 function Links() {
   return (
     <Routes>
-      <Route path="/kopitext" element={<KopiText />} />
+      <Route path="/Guide/kopitext" element={<KopiText />} />
       <Route path="/Guide" element={<Home />} />
-      <Route path="/Genveje" element={<Genveje />} />
-      <Route path="/WordToPdf" element={<WordToPdf />} />
-      <Route path="/kopibillede" element={<BilledeFraMobilTilPc />} />
-      <Route path="/mappe" element={<CreateFolder />} />
-      <Route path="/edit/picture" element={<EditPicture />} />
-      <Route path="/kopiere/mappe" element={<KopiereMappe />} />
+      <Route path="/Guide/Genveje" element={<Genveje />} />
+      <Route path="/Guide/WordToPdf" element={<WordToPdf />} />
+      <Route path="/Guide/kopibillede" element={<BilledeFraMobilTilPc />} />
+      <Route path="/Guide/mappe" element={<CreateFolder />} />
+      <Route path="/Guide/edit/picture" element={<EditPicture />} />
+      <Route path="/Guide/kopiere/mappe" element={<KopiereMappe />} />
     </Routes>
   );
 }
