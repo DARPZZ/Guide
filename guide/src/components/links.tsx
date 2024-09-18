@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';  // Use Link for normal navigation
 import { Route, Routes } from 'react-router-dom';
 import KopiText from './individualguide/kopi';
 import Genveje from './individualguide/genveje-compos/genveje';
@@ -10,23 +10,19 @@ import Home from './Home';
 import Error404 from './Error404';
 import EditPicture from './individualguide/EditPicture';
 import KopiereMappe from './individualguide/KopiereMappe/KopiereMappe';
+
 function Links() {
-  
   return (
-    
-        <Routes>
-          <Route path="/kopitext" element={<KopiText/>} />
-          <Route path='/' element={<Home/>}/>
-          <Route path='/Genveje' element={<Genveje/>}/>
-          <Route path='/WordToPdf' element={<WordToPdf/>}/>
-          <Route path='/kopibillede' element={<BilledeFraMobilTilPc/>}/>
-          <Route path="*" element={<Error404 />} />
-          <Route path='/mappe' element={<CreateFolder/>}/>
-          <Route path='/edit/picture' element={<EditPicture/>}/>
-          <Route path='/kopiere mappe' element={<KopiereMappe/>}/>
-          
-        </Routes>
- 
+    <Routes>
+      <Route path="/kopitext" element={<KopiText />} />
+      <Route path="/Guide" element={<Home />} />
+      <Route path="/Genveje" element={<Genveje />} />
+      <Route path="/WordToPdf" element={<WordToPdf />} />
+      <Route path="/kopibillede" element={<BilledeFraMobilTilPc />} />
+      <Route path="/mappe" element={<CreateFolder />} />
+      <Route path="/edit/picture" element={<EditPicture />} />
+      <Route path="/kopiere-mappe" element={<KopiereMappe />} />
+    </Routes>
   );
 }
 
