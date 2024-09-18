@@ -11,10 +11,18 @@
          gtag('config', 'G-K93D6DKE6D'); </script>
          <script>
           window.onhashchange = function() {
+            var fullUrl = location.pathname + location.hash;
+            dataLayer.push({
+              event: 'hashChange',
+              newUrl: fullUrl,
+              oldUrl: document.referrer 
+            });
+            
             gtag('event', 'page_view', {
-              page_path: location.pathname + location.hash
+              page_path: fullUrl
             });
           };
+          
         </script>
     <script type="module" crossorigin src="/Guide/assets/index-Bp4k2lZ-.js"></script>
     <link rel="stylesheet" crossorigin href="/Guide/assets/index-Dp0q3bVd.css">
