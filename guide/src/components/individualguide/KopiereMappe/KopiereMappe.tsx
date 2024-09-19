@@ -8,7 +8,7 @@ function KopiereMappe() {
   const handleRenameClick = () => {
     
     setShowRenameSteps(true);
-   
+    getPageLocation();
   };
   useEffect(() => {
     if (showRenameSteps) {
@@ -44,7 +44,7 @@ function KopiereMappe() {
         </div>
         <div>
           <h1>
-            2. Tryk en gang på den mappe du vil kopiere (Mappen skal have en mørk
+            2. Tryk en gang på den mappe du vil kopiere (Mappen skal have en lys
             blå farve)
           </h1>
         </div>
