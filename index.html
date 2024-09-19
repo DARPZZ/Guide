@@ -8,7 +8,9 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-VR3XP9F0K7');
+  gtag('config', 'G-VR3XP9F0K7', {
+    'page_path': window.location.pathname + window.location.hash
+  });
 </script>
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
