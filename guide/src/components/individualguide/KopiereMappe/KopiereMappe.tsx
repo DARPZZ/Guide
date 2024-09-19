@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import folderCoppy from '../../../assets/folderCoppy.png'
+
 import TomtSpace from "../../../assets/KopiereMappe/TomtSpace.png";
 
 function KopiereMappe() {
@@ -34,9 +34,6 @@ function KopiereMappe() {
         <h1 className="pt-4">
           I denne guide bliver der vist, hvordan du kan kopiere mapper
         </h1>
-        <div>
-          <img className=" pt-5 " src={folderCoppy} alt="" />
-        </div>
       </div>
       <div className="pl-5 mt-10 font-bold space-y-10">
         <div>
