@@ -10,11 +10,11 @@ import Home from './Home';
 import EditPicture from './individualguide/EditPicture';
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga4';
-ReactGA.initialize("G-K93D6DKE6D");
+ReactGA.initialize("G-HE3W5NHPGN");
 function Links() {
   const location = useLocation();
 
-  useEffect(() => {
+  useEffect(() => { 
     const pagePath = window.location.pathname + window.location.search + window.location.hash;
     ReactGA.send({ hitType: "pageview", page: pagePath });
   }, [location]);

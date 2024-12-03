@@ -49,7 +49,7 @@ function EditPicture() {
 
         <h3 className="font-normal text-lg">
           <div className="space-y-5">
-            <span className="font-bold underline text-xl">3.</span> Flere valg:
+            <span className="font-bold underline text-xl">4.</span> Flere valg:
             Du vil nu få muligheden for at gemme på forskellige måder
             <h3>
               Gem som kopi : Du gemmer en kopi af dit billede. Så det oprindelige billede har du stadig, og laver en ny (som er det redigere billede). Det vil sige, at du har 2 billeder 

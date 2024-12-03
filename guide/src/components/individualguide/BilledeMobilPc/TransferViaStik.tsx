@@ -14,7 +14,7 @@ function TransferViaStik() {
       </h3>
 
       <h3 className="font-normal text-lg">
-        <span className="font-bold underline text-xl">2.</span> Pop up: På telefonen vil der komme en besked her skal du trykke "tillad"
+        <span className="font-bold underline text-xl">2.</span> Pop up: På telefonen vil der komme en besked her skal du trykke "Tillad"
       </h3>
       <img src={picture1} className="w-80"/>
 
@@ -37,7 +37,7 @@ function TransferViaStik() {
       </h3>
 
       <h3 className="font-normal text-lg">
-        <span className="font-bold underline text-xl">6.</span> Internal storage : Klik på internal storage. Du burde nu, at kunne se en masse mapper
+        <span className="font-bold underline text-xl">6.</span> Internal storage : Klik på "internal storage". Du burde nu, at kunne se en masse mapper
       </h3>
       <img src={picture3} className="w-60" />
 
