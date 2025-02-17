@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import EasterEgg from "./EasterEggFolder/EasterEgg";
 import Confettis from "./EasterEggFolder/Confetti";
 import ImageComp from "./EasterEggFolder/ImageComp";
-import GmailPicture from "../assets/GmailPicture.png"
+import GmailPicture from "../assets/GmailPicture.png";
 function Home() {
   const [inputValue, setInputValue] = useState("");
   const [easterEgg, setEasterEgg] = useState<boolean>(false);
@@ -29,7 +29,7 @@ function Home() {
             htmlFor="default-search"
             className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
           >
-            Search
+            Søg
           </label>
           <div className="relative w-full">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -63,7 +63,7 @@ function Home() {
               onClick={getInput}
               className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              Search
+              Søg
             </button>
           </div>
         </div>
@@ -87,20 +87,53 @@ function Home() {
           <ul className="text-2xl font-bold space-y-10 py-10 flex flex-col justify-center items-center">
             <li>
               <HashLink to={"/kopibillede"}>
-                Flyt billede fra mobil til pc
+              <button
+                  className="rounded-full w-80 bg-gradient-to-tr from-slate-800 to-slate-700 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                >
+                  Flyt billede fra mobil til pc
+                </button>
               </HashLink>
             </li>
             <li>
-              <HashLink to={"/Genveje"}>Genveje</HashLink>
+              <HashLink to={"/Genveje"}>
+                <button
+                  className="rounded-full w-80 bg-gradient-to-tr from-slate-800 to-slate-700 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                >
+                  Genveje
+                </button>
+              </HashLink>
             </li>
             <li>
-              <HashLink to={"/WordToPdf"}>Word til PDF</HashLink>
+              <HashLink to={"/WordToPdf"}>
+                <button
+                  className="rounded-full w-80 bg-gradient-to-tr from-slate-800 to-slate-700 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                >
+                  Word til PDF
+                </button>
+              </HashLink>
             </li>
             <li>
-              <HashLink to={"/mappe"}>Lav en ny mappe</HashLink>
+              <HashLink to={"/mappe"}>
+                <button
+                  className="rounded-full w-80 bg-gradient-to-tr from-slate-800 to-slate-700 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                >
+                  Lav en ny mappe
+                </button>
+              </HashLink>
             </li>
             <li>
-              <HashLink to={"/edit/picture"}>Redigere billede</HashLink>
+              <HashLink to={"/edit/picture"}>
+                <button
+                  className="rounded-full w-80 bg-gradient-to-tr from-slate-800 to-slate-700 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button"
+                >
+                  Redigere billede
+                </button>
+              </HashLink>
             </li>
           </ul>
           <div className=" flex flex-col justify-center items-center">
@@ -115,7 +148,10 @@ function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="md:w-28 md:h-28 w-28 h-28" src={GmailPicture} />
+                  <img
+                    className="md:w-28 md:h-28 w-28 h-28"
+                    src={GmailPicture}
+                  />
                 </a>
               </div>
             </div>
