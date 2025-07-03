@@ -5,6 +5,7 @@ import picture3 from "../../../assets/WordToPdfPictures/picture3.png";
 import picture4 from "../../../assets/WordToPdfPictures/picture4.png";
 import picture5 from "../../../assets/WordToPdfPictures/picture5.png";
 import picture6 from "../../../assets/WordToPdfPictures/picture6.png";
+import picture7 from "../../../assets/WordToPdfPictures/picture7.png";
 import wordpicture from "../../../assets/WordToPdfPictures/word.png";
 import arrow from "../../../assets/WordToPdfPictures/arrow.png";
 import pdf from "../../../assets/WordToPdfPictures/pdf.png";
@@ -61,16 +62,21 @@ function WordPdfBody() {
           </h3>
           <img src={picture3} alt="Fail" className="h-96" />
 
-          <h3 className="font-normal text-lg">
-            <span className="font-bold underline text-xl">4.</span> Vælg hvor du
-            vil gemme filen: Vælg den placering på din computer, hvor du vil
-            gemme din nye PDF-fil. Det kan være på skrivebordet, i en bestemt
-            mappe.
+
+
+           <h3 className="font-normal text-lg">
+            <span className="font-bold underline text-xl">4.</span> Vælg 'Gem
+            som': Når du er i 'Filer'-menuen, vælg 'Gem som'
           </h3>
-          <img src={picture4} alt="Fail" className="h-64" />
+          <img src={picture3} alt="Fail" className="h-96" />
 
           <h3 className="font-normal text-lg">
-            <span className="font-bold underline text-xl">5.</span> Vælg
+            <span className="font-bold underline text-xl">5.</span> Vælg Gennemse
+          </h3>
+          <img src={picture7} alt="Fail" className="h-64" />
+
+          <h3 className="font-normal text-lg">
+            <span className="font-bold underline text-xl">6.</span> Vælg
             PDF-formatet: Når du har valgt hvor du vil gemme filen, vil der være
             en dropdown-menu lige under feltet hvor du indtaster filnavnet.
             Denne dropdown-menu hedder typisk "Filtype" eller "Save as type".
@@ -79,7 +85,7 @@ function WordPdfBody() {
           <img src={picture5} alt="Fail" className="h-64" />
 
           <h3 className="font-normal text-lg">
-            <span className="font-bold underline text-xl">6.</span> Gem filen:
+            <span className="font-bold underline text-xl">7.</span> Gem filen:
             Efter du har valgt PDF-formatet, klik på 'Gem' knappen.
           </h3>
           <img src={picture6} alt="Fail" className="md:w-1/2" />
