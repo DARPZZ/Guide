@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import picture1 from "../../../assets/WordToPdfPictures/picture1.png";
 import picture2 from "../../../assets/WordToPdfPictures/picture2.png";
-import picture3 from "../../../assets/WordToPdfPictures/picture3.png";
+import picture3 from "../../../assets/WordToPdfPictures/image.png";
 import picture4 from "../../../assets/WordToPdfPictures/picture4.png";
 import picture5 from "../../../assets/WordToPdfPictures/picture5.png";
 import picture6 from "../../../assets/WordToPdfPictures/picture6.png";
@@ -11,13 +11,48 @@ import arrow from "../../../assets/WordToPdfPictures/arrow.png";
 import pdf from "../../../assets/WordToPdfPictures/pdf.png";
 import ScrollToTopButton from "../../ScrollToTopButton";
 import { scrollToTop } from "../../scroll";
+import WordPdfComps from "./WordPdfComps";
 function WordPdfBody() {
   const [showScrollTopButton, setShowScrollTopButton] = useState(false);
-
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     setShowScrollTopButton(scrollTop > 0);
   };
+//#region  steps
+  const id1 = {
+    id: 1,
+    picture: picture1,
+    text: "Find det Word-dokument, du vil lave om til en PDF-fil, og åben det ved at dobbeltklikke på det.",
+  };
+   const id2 = {
+    id: 2,
+    picture: picture2,
+    text: "Gå til 'Filer'-menuen: I øverste venstre hjørne af Word-vinduet, klik på 'Filer'. Denne knap kan også se ud som et lille ikon eller have ordet 'File' afhængigt af din version af Word.",
+    styleing:"md:w-1/2"
+  };
+   const id3 = {
+    id: 3,
+    picture: picture3,
+    text: "Vælg 'Gem som': Når du er i 'Filer'-menuen, vælg 'Gem som'",
+    
+  };
+   const id4 = {
+    id: 4,
+    picture: picture7,
+    text: "Vælg Gennemse",
+  };
+   const id5 = {
+    id: 5,
+    picture: picture5,
+    text: "Vælg PDF-formatet: Når du har valgt hvor du vil gemme filen, vil der være en dropdown-menu lige under feltet hvor du indtaster filnavnet. Denne dropdown-menu hedder typisk Filtype eller Save as type. Klik på denne menu og vælg PDF fra listen over filtyper.",
+  };
+   const id6 = {
+    id: 6,
+    picture: picture6,
+    text: "Gem filen: Efter du har valgt PDF-formatet, klik på 'Gem' knappen.",
+  };
+//#endregion
+
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -40,60 +75,18 @@ function WordPdfBody() {
             <img src={pdf} className="w-20" />
           </div>
         </div>
+
         <div className="w-11/12 pt-16 pl-2 space-y-10 text-xs">
-          <h3 className="font-normal text-lg">
-            <span className="font-bold underline text-xl">1.</span> Find det
-            Word-dokument, du vil lave om til en PDF-fil, og åben det ved at
-            dobbeltklikke på det.
-          </h3>
-          <img src={picture1} alt="Fail" className="md:w-1/2" />
+          <WordPdfComps step={id1}></WordPdfComps>
+          <WordPdfComps step={id2}></WordPdfComps>
+          <WordPdfComps step={id3}></WordPdfComps>
+          <WordPdfComps step={id4}></WordPdfComps>
+          <WordPdfComps step={id5}></WordPdfComps>
+          <WordPdfComps step={id6}></WordPdfComps>
 
-          <h3 className="font-normal text-lg">
-            <span className="font-bold underline text-xl">2.</span> Gå til
-            'Filer'-menuen: I øverste venstre hjørne af Word-vinduet, klik på
-            'Filer'. Denne knap kan også se ud som et lille ikon eller have
-            ordet 'File' afhængigt af din version af Word.
-          </h3>
-          <img src={picture2} alt="Fail" className="md:w-1/2" />
-
-          <h3 className="font-normal text-lg">
-            <span className="font-bold underline text-xl">3.</span> Vælg 'Gem
-            som': Når du er i 'Filer'-menuen, vælg 'Gem som'
-          </h3>
-          <img src={picture3} alt="Fail" className="h-96" />
-
-
-
-           <h3 className="font-normal text-lg">
-            <span className="font-bold underline text-xl">4.</span> Vælg 'Gem
-            som': Når du er i 'Filer'-menuen, vælg 'Gem som'
-          </h3>
-          <img src={picture3} alt="Fail" className="h-96" />
-
-          <h3 className="font-normal text-lg">
-            <span className="font-bold underline text-xl">5.</span> Vælg Gennemse
-          </h3>
-          <img src={picture7} alt="Fail" className="h-64" />
-
-          <h3 className="font-normal text-lg">
-            <span className="font-bold underline text-xl">6.</span> Vælg
-            PDF-formatet: Når du har valgt hvor du vil gemme filen, vil der være
-            en dropdown-menu lige under feltet hvor du indtaster filnavnet.
-            Denne dropdown-menu hedder typisk "Filtype" eller "Save as type".
-            Klik på denne menu og vælg 'PDF' fra listen over filtyper.
-          </h3>
-          <img src={picture5} alt="Fail" className="h-64" />
-
-          <h3 className="font-normal text-lg">
-            <span className="font-bold underline text-xl">7.</span> Gem filen:
-            Efter du har valgt PDF-formatet, klik på 'Gem' knappen.
-          </h3>
-          <img src={picture6} alt="Fail" className="md:w-1/2" />
         </div>
       </div>
-      {showScrollTopButton && (
-        <ScrollToTopButton/>
-      )}
+      {showScrollTopButton && <ScrollToTopButton />}
     </div>
   );
 }
