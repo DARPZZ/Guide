@@ -10,6 +10,7 @@ import Home from './Home';
 import EditPicture from './individualguide/EditPicture';
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga4';
+import KnowProblems from "./individualguide/knowProblems";
 ReactGA.initialize("G-HE3W5NHPGN");
 function Links() {
   const location = useLocation();
@@ -28,6 +29,7 @@ function Links() {
           <Route path='/kopibillede' element={<BilledeFraMobilTilPc/>}/>
           <Route path='/mappe' element={<CreateFolder/>}/>
           <Route path='/edit/picture' element={<EditPicture/>}/>
+          <Route path="kendte/problemer" element={<KnowProblems/>}/>
           
         </Routes>
  
