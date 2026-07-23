@@ -20,7 +20,24 @@ function Home() {
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
   };
-
+  interface buttonProps {
+    text: string;
+    hashLinkTo: string;
+  }
+  function HomeButtonLink({ text, hashLinkTo }: buttonProps) {
+    return (
+      <li>
+        <HashLink to={hashLinkTo}>
+          <button
+            className="rounded-full w-80 bg-gradient-to-tr from-slate-800 to-slate-700 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            type="button"
+          >
+            {text}
+          </button>
+        </HashLink>
+      </li>
+    );
+  }
   return (
     <div className="h-full w-full">
       <div className="flex flex-col items-center justify-center">
@@ -85,26 +102,12 @@ function Home() {
         <nav>
           <div className="animation start-home"></div>
           <ul className="text-2xl font-bold space-y-10 py-10 flex flex-col justify-center items-center">
-            <li>
-              <HashLink to={"/kopibillede"}>
-                <button
-                  className="rounded-full w-80 bg-gradient-to-tr from-slate-800 to-slate-700 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                  type="button"
-                >
-                  Flyt billede fra mobil til pc
-                </button>
-              </HashLink>
-            </li>
-            <li>
-              <HashLink to={"/Genveje"}>
-                <button
-                  className="rounded-full w-80 bg-gradient-to-tr from-slate-800 to-slate-700 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                  type="button"
-                >
-                  Genveje
-                </button>
-              </HashLink>
-            </li>
+            <HomeButtonLink
+              hashLinkTo="/kopibillede"
+              text="Flyt billede fra mobil til pc"
+            />
+            <HomeButtonLink hashLinkTo="/Genveje" text="Genveje" />
+
             <li>
               <HashLink to={"/WordToPdf"}>
                 <button

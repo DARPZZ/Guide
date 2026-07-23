@@ -11,8 +11,9 @@ function knowProblems() {
           <p className="flex justify-center items-center pr-5">
             1. Har filen ikke noget navn, og ser sådan her ud:{" "}
           </p>
+          <img src={NoNameOnFile} className="rounded-lg" alt="" />
         </div>
-        <div className="pl-7">
+        <div className="pl-12">
           <p>1.1: Find filen i Stifinder</p>
           <p>1.2: Højreklik på filen</p>
           <p>1.3: Vælg "Omdøb"</p>
